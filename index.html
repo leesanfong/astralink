@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AstraLink - Agent-first browser for shared human and AI work</title>
+    <meta
+      name="description"
+      content="AstraLink is an agent-first desktop browser built for fast AI browser control, private human login, guarded actions, and token-efficient snapshots."
+    />
+    <meta
+      name="keywords"
+      content="AstraLink, agent browser, AI browser, Codex browser, MCP browser, automation browser, human in the loop"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="AstraLink - Agent-first browser" />
+    <meta
+      property="og:description"
+      content="A shared desktop browser where humans handle private moments and agents move fast with guarded DOM-native control."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/astralink.png" />
+    <meta name="theme-color" content="#06130f" />
+    <link rel="icon" href="/assets/astralink.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AstraLink",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Windows",
+        "description": "Agent-first desktop browser for shared human and AI browser work.",
+        "softwareVersion": "0.1.0",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AstraLink home">
+        <img src="/assets/astralink.png" alt="" />
+        <span>AstraLink</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#why">Why</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#message">Message</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Agent-first desktop browser</p>
+          <h1>AstraLink</h1>
+          <p class="hero-copy">
+            A shared browser built so AI agents can read, click, type, and coordinate with a human
+            without wasting time, tokens, or private credentials.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download">Download for Windows</a>
+            <a class="button secondary" href="#why">See why it exists</a>
+          </div>
+          <div class="terminal" aria-label="AstraLink agent command example">
+            <span>$ astralink</span>
+            <span>snapshot -> lock -> guarded action -> release</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band proof" id="why">
+        <div class="section-head">
+          <p class="eyebrow">Why we built it</p>
+          <h2>The browser should speak agent.</h2>
+        </div>
+        <div class="split">
+          <p>
+            Normal browsers are made for human eyes. Agents need compact page state, stable element
+            ids, exact coordinates, safe input rules, and a way to work while the human is doing
+            something else.
+          </p>
+          <p>
+            AstraLink keeps the human in control for passwords, OTPs, approvals, and sensitive
+            moments. The agent gets a fast lane for reading, navigation, tabs, and normal form work.
+          </p>
+        </div>
+      </section>
+
+      <section class="band features" id="features">
+        <div class="section-head">
+          <p class="eyebrow">Built for agent workflows</p>
+          <h2>Fast where it should be. Guarded where it matters.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Token-efficient snapshots</h3>
+            <p>Agents read compact page previews, element roles, ids, risks, hints, and centers.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Human-private login</h3>
+            <p>Passwords, OTPs, recovery codes, and payment fields stay human-only.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Agent write lock</h3>
+            <p>Multiple agents can inspect safely while only one agent changes browser state.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Guarded actions</h3>
+            <p>Risky clicks, coordinate actions, and submit-like Enter keys pause for approval.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band download" id="download">
+        <div>
+          <p class="eyebrow">Free preview</p>
+          <h2>Download AstraLink for Windows</h2>
+          <p>
+            This early build is for testing agent browser workflows. It includes the desktop app,
+            local bridge, MCP tools, audit trail, and the AstraLink Agent Skill.
+          </p>
+        </div>
+        <div class="download-panel">
+          <img src="/assets/astralink.png" alt="AstraLink app icon" />
+          <strong>AstraLink 0.1.0</strong>
+          <span>Windows 10/11</span>
+          <a
+            class="button primary"
+            href="https://github.com/leesanfong/astralink/releases/download/v0.1.0/AstraLink.Setup.0.1.0.exe"
+            data-download-link
+            >Download installer</a
+          >
+          <small>SHA256: 58ebc8f43174295c5a01a6f3f0fe4c64543450695d32c1500abd96991ceb6d7e</small>
+        </div>
+      </section>
+
+      <section class="band message" id="message">
+        <div class="section-head">
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>Send a message</h2>
+          <p>Questions, test reports, or early access requests can be sent straight to email.</p>
+        </div>
+        <form class="message-form" id="message-form">
+          <label>
+            Name
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AstraLink</span>
+      <span>Free preview on Cloudflare Pages</span>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
