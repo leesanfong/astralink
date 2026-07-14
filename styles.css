@@ -222,13 +222,22 @@ h3 {
   font-size: 1.12rem;
 }
 
-.feature-grid {
+.feature-grid,
+.skill-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
+.feature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.skill-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .feature-grid article,
+.skill-grid article,
 .download-panel,
 .message-form {
   border: 1px solid var(--line);
@@ -237,16 +246,27 @@ h3 {
   box-shadow: 0 24px 70px var(--shadow);
 }
 
-.feature-grid article {
+.feature-grid article,
+.skill-grid article {
   min-height: 15rem;
   padding: 1.3rem;
 }
 
-.feature-grid span {
+.feature-grid span,
+.skill-grid span {
   display: inline-block;
   margin-bottom: 2rem;
   color: var(--gold);
   font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.skill-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-grid .button {
+  margin-top: auto;
 }
 
 .download {
@@ -335,13 +355,15 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .feature-grid {
+  .feature-grid,
+  .skill-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 560px) {
-  .feature-grid {
+  .feature-grid,
+  .skill-grid {
     grid-template-columns: 1fr;
   }
 
