@@ -80,7 +80,8 @@ For login pages:
 
 1. Fill public identifiers such as email only when the user explicitly allows it.
 2. For passwords, OTPs, CAPTCHA, recovery codes, and payment secrets, ask the human to type directly in AstraLink.
-3. After the human finishes, call `browser.desktop_snapshot` to continue.
+3. If Google sign-in says AstraLink is not secure, do not bypass or spoof it. Ask the human to open the page in Chrome/Edge with AstraLink's external-browser button, finish login there, and then continue only after the human approves the next step.
+4. After the human finishes, call `browser.desktop_snapshot` to continue.
 
 ## Blank Page Flow
 

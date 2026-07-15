@@ -81,6 +81,10 @@ If a tool returns:
 
 You may fill public identifiers such as username or email only when the human clearly allows it.
 
+Google sign-in is a special case. If Google says the browser is not secure, do not try to bypass it.
+Ask the human to use AstraLink's "Open secure browser" button or open the current URL in Chrome/Edge,
+finish login there, and then continue from the page the human approves.
+
 The human must type:
 
 - passwords

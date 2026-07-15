@@ -31,6 +31,9 @@ ASTRALINK_AGENT_SKILL.md
 5. agent ต้องขอ write lock ก่อนคลิก/พิมพ์/เปลี่ยนแท็บ
 6. คนเป็นคนกรอก password, OTP, CAPTCHA, recovery code, card, CVV, PIN เองเท่านั้น
 
+ถ้า Google แจ้งว่า browser ไม่ปลอดภัย ให้กดปุ่ม `Open secure browser` ใน AstraLink
+หรือเปิดลิงก์นั้นใน Chrome/Edge แล้ว login เอง ห้ามให้ agent พยายามหลบหรือปลอม browser เพื่อข้ามระบบ Google
+
 ## ห้ามส่งไฟล์เหล่านี้ให้ใคร
 
 ห้ามส่ง:
